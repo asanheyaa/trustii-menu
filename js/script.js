@@ -164,7 +164,6 @@ if (menuLinks) {
 		function onClickToLink(e) {
 			e.preventDefault()
 			if (document.documentElement.dataset.mobileMode === 'true') {
-				console.log(document.documentElement.dataset.mobileMode);
 				const menuContent = menuLink.nextElementSibling;
 				menuLink.classList.toggle('_active')
 				_slideToggle(menuContent)
@@ -244,6 +243,7 @@ if (menuLinks) {
 				}
 			}
 		}
+		
 	});
 
 
