@@ -194,7 +194,7 @@ body._lock {
 .header:not(._active)._open-menu .header__logo-black {
   opacity: 1;
 }
-.header:not(._active)._open-menu::after {
+.header._open-menu::after {
   content: "";
   left: 0;
 }
