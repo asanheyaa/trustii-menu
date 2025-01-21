@@ -243,7 +243,7 @@ if (menuLinks) {
 				}
 			}
 		}
-		
+
 	});
 
 
@@ -265,17 +265,20 @@ function mobileModeFunction() {
 mobileModeFunction()
 
 
-
 // change header on scroll
-window.addEventListener('scroll', onScrollFunction)
+const headerChanging = document.querySelector('.header-changing');
 
-function onScrollFunction(e) {
+if (headerChanging) {
+	window.addEventListener('scroll', onScrollFunction)
 
-	let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+	function onScrollFunction(e) {
 
-	if (scrollPosition > 10) {
-		header.classList.add('_active')
-	} else {
-		header.classList.remove('_active')
+		let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+
+		if (scrollPosition > 10) {
+			header.classList.add('_active')
+		} else {
+			header.classList.remove('_active')
+		}
 	}
 }
